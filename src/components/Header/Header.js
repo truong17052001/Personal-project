@@ -39,10 +39,10 @@ const fs = { fontSize: '30px', cursor: 'pointer', color: '#22292f', '&:hover': {
 const ii = { fontSize: '20px', mr: '15px', cursor: 'pointer' };
 
 function Header() {
-    const [open, setOpen] = useState(false);
-    const handleOpen = () => {
-        open === true ? setOpen(false) : setOpen(true);
-    };
+    // const [open, setOpen] = useState(false);
+    // const handleOpen = () => {
+    //     open === true ? setOpen(false) : setOpen(true);
+    // };
     const [search, openSearch] = useState(false);
     const handleSearch = () => openSearch(true);
     const handleCloseSearch = () => openSearch(false);
@@ -101,9 +101,9 @@ function Header() {
                                 </div>
                                 <div className={cx('quick_search')}>
                                     Quick search tags:
-                                    <a>Gift</a>
-                                    <a>News</a>
-                                    <a>Card</a>
+                                    <a href='/'>Gift</a>
+                                    <a href='/'>News</a>
+                                    <a href='/'>Card</a>
                                 </div>
                                 <h2>What we found:</h2>
                                 <div className={cx('search_result')}>
@@ -132,19 +132,19 @@ function Header() {
                             <div className={cx('tippy')} tabIndex="-1" {...attrs}>
                                 <Link className={cx('tippy-item')} to="/account">
                                     <AccountCircleOutlinedIcon sx={ii} />
-                                    <a>Detail Account</a>
+                                    <a href='/'>Detail Account</a>
                                 </Link>
                                 <Link className={cx('tippy-item')} to="/wishlist">
                                     <FavoriteBorderOutlinedIcon sx={ii} />
-                                    <a>Wishlists</a>
+                                    <a href='/'>Wishlists</a>
                                 </Link>
                                 <Link className={cx('tippy-item')} to="/settting">
                                     <TuneOutlinedIcon sx={ii} />
-                                    <a>Setting</a>
+                                    <a href='/'>Setting</a>
                                 </Link>
                                 <Link className={cx('tippy-item')} to="/logout">
                                     <LogoutOutlinedIcon sx={ii} />
-                                    <a>Logout</a>
+                                    <a href='/'>Logout</a>
                                 </Link>
                             </div>
                         )}
