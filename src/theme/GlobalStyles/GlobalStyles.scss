@@ -1,8 +1,11 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --primary: #fe2c55;
+    --primary: #000000;
+    --secondary: #ffffff;
+    --font-size-icon: 12px;
+    --font-size-title: 15px;
 }
 
 html {
@@ -10,8 +13,12 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik';
     font-size: 1.6rem;
+    font-weight: 400;
     line-height: 1.5;
     text-rendering: optimizespeed;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
