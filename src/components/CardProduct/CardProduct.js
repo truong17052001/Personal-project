@@ -1,9 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './CardProduct.module.scss';
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 //mui
-import Modal from '@mui/material/Modal';
 
 //icon
 import VisibilityIcon from '@mui/icons-material/Visibility';
@@ -47,7 +45,7 @@ function CardProduct() {
                 ></FavoriteIcon>
             </div>
             <div className={cx('info_product')}>
-                <a>TOCHIBA</a>
+                <a href='/'>TOCHIBA</a>
                 <h3>QLED 4K Smart TV</h3>
                 <div>OOOOO</div>
                 <div>$360.00</div>
