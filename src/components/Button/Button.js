@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 function Button({children}) {
     return ( 
-        <a className={cx("button-primary")}>{children}</a>
+        <a href='/' className={cx("button-primary")}>{children}</a>
      );
 }
 
