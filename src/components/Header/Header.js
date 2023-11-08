@@ -153,7 +153,7 @@ function Header() {
                         <PersonOutlineOutlinedIcon onClick={handleLogin} sx={fs} />
                         {/* </BootstrapTooltip> */}
                     </Tippy>
-                    {/* <Modal disableAutoFocus={true} open={login} onClose={handleCloseLogin}>
+                    <Modal disableAutoFocus={true} open={login} onClose={handleCloseLogin}>
                         <div className={cx('modal-login')}>
                             <div className={cx('modal_close')}>
                                 <CloseIcon sx={fs} onClick={handleCloseLogin}></CloseIcon>
@@ -179,7 +179,7 @@ function Header() {
                                 </form>
                             </div>
                         </div>
-                    </Modal> */}
+                    </Modal>
                 </div>
             </div>
         </div>
