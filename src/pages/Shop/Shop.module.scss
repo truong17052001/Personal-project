@@ -1,9 +1,12 @@
 .wrapper {
-    width: 1168px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .products {
     display: flex;
+    justify-content: center;
+    padding: 0px 70px;
+    margin-top: 50px;
+    gap: 50px;
 }

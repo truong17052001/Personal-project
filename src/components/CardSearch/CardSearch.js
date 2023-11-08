@@ -10,6 +10,9 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import Button from '../Button/Button';
 
 const cx = classNames.bind(styles);
 const fs = { fontSize: '30px', cursor: 'pointer', color: '#22292f', '&:hover': { color: '$ccc' } };
@@ -66,7 +69,12 @@ function CardSearch() {
                                     <KeyboardArrowDownIcon sx={fs}></KeyboardArrowDownIcon>
                                 </div>
                             </div>
-                            <div className={cx('zoom_window')}></div>
+                            <div className={cx('zoom_window')}>
+                                <img
+                                    src="//cdn.shopify.com/s/files/1/1323/8419/products/2_dbc1abd7-9135-433b-810f-55815233cba0.png?v=1674575880&width=1100"
+                                    alt="img"
+                                ></img>
+                            </div>
                         </div>
                         <div className={cx('content_product')}>
                             <Link hef="#" className={cx('product_name')}>
@@ -114,6 +122,16 @@ function CardSearch() {
                                 <label>M</label>
                                 <label>L</label>
                                 <label>XL</label>
+                            </div>
+                            <div className={cx('product-qty')}>
+                                <button>
+                                    <KeyboardArrowLeftIcon sx={{ fontSize: '20px' }} />
+                                </button>
+                                <input type="text" value="1"></input>
+                                <button>
+                                    <KeyboardArrowRightIcon sx={{ fontSize: '20px' }} />
+                                </button>
+                                <Button>Add to cart</Button>
                             </div>
                         </div>
                     </div>

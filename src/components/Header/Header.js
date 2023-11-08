@@ -35,7 +35,7 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
 const Test = function ({ children, name }) {
     return <div className={cx('tooltip')}>{name}</div>;
 };
-const fs = { fontSize: '30px', cursor: 'pointer', color: '#22292f', '&:hover': { color: '$ccc' } };
+const fs = { fontSize: '30px', cursor: 'pointer', color: '#22292f', '&:focus': { outline: 'none' } };
 const ii = { fontSize: '20px', mr: '15px', cursor: 'pointer' };
 
 function Header() {
@@ -101,9 +101,9 @@ function Header() {
                                 </div>
                                 <div className={cx('quick_search')}>
                                     Quick search tags:
-                                    <a href='/'>Gift</a>
-                                    <a href='/'>News</a>
-                                    <a href='/'>Card</a>
+                                    <a href="/">Gift</a>
+                                    <a href="/">News</a>
+                                    <a href="/">Card</a>
                                 </div>
                                 <h2>What we found:</h2>
                                 <div className={cx('search_result')}>
@@ -132,19 +132,19 @@ function Header() {
                             <div className={cx('tippy')} tabIndex="-1" {...attrs}>
                                 <Link className={cx('tippy-item')} to="/account">
                                     <AccountCircleOutlinedIcon sx={ii} />
-                                    <a href='/'>Detail Account</a>
+                                    <a href="/">Detail Account</a>
                                 </Link>
                                 <Link className={cx('tippy-item')} to="/wishlist">
                                     <FavoriteBorderOutlinedIcon sx={ii} />
-                                    <a href='/'>Wishlists</a>
+                                    <a href="/">Wishlists</a>
                                 </Link>
                                 <Link className={cx('tippy-item')} to="/settting">
                                     <TuneOutlinedIcon sx={ii} />
-                                    <a href='/'>Setting</a>
+                                    <a href="/">Setting</a>
                                 </Link>
                                 <Link className={cx('tippy-item')} to="/logout">
                                     <LogoutOutlinedIcon sx={ii} />
-                                    <a href='/'>Logout</a>
+                                    <a href="/">Logout</a>
                                 </Link>
                             </div>
                         )}
@@ -153,7 +153,7 @@ function Header() {
                         <PersonOutlineOutlinedIcon onClick={handleLogin} sx={fs} />
                         {/* </BootstrapTooltip> */}
                     </Tippy>
-                    <Modal disableAutoFocus={true} open={login} onClose={handleCloseLogin}>
+                    {/* <Modal disableAutoFocus={true} open={login} onClose={handleCloseLogin}>
                         <div className={cx('modal-login')}>
                             <div className={cx('modal_close')}>
                                 <CloseIcon sx={fs} onClick={handleCloseLogin}></CloseIcon>
@@ -179,7 +179,7 @@ function Header() {
                                 </form>
                             </div>
                         </div>
-                    </Modal>
+                    </Modal> */}
                 </div>
             </div>
         </div>

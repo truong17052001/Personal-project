@@ -6,6 +6,7 @@ import React from 'react';
 //icon
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import Button from '../Button/Button';
 
 const cx = classNames.bind(styles);
 
@@ -14,7 +15,7 @@ function CardProduct() {
         <div className={cx('wrapper')}>
             <div className={cx('img_product')}>
                 <img
-                    src="//lumia-theme.com/cdn/shop/products/1_3673db6e-eaaa-469e-a7bf-afeb4bc2c8a9.png?v=1676467905&width=1100"
+                    src="//lumia-theme.com/cdn/shop/products/1_55dc9372-ef76-44bb-b746-37b541073b5f.png?crop=center&height=1320&v=1676888394&width=1100"
                     alt="img_product"
                 ></img>
                 <VisibilityIcon
@@ -45,10 +46,10 @@ function CardProduct() {
                 ></FavoriteIcon>
             </div>
             <div className={cx('info_product')}>
-                <a href='/'>TOCHIBA</a>
-                <h3>QLED 4K Smart TV</h3>
-                <div>OOOOO</div>
-                <div>$360.00</div>
+                <a href='/product'>TOCHIBA</a>
+                <h3>Light blue denim jacket</h3>
+                <div>36.000.000 VND</div>
+                <Button>Add to cart</Button>
             </div>
             <div className={cx('hidden_info_product')}>
                 
