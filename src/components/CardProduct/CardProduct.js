@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './CardProduct.module.scss';
-import React from 'react';
+
 //mui
 
 //icon
@@ -10,7 +10,7 @@ import Button from '../Button/Button';
 
 const cx = classNames.bind(styles);
 
-function CardProduct() {
+function CardProduct({ name, des, price, children }) {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('img_product')}>
@@ -46,14 +46,12 @@ function CardProduct() {
                 ></FavoriteIcon>
             </div>
             <div className={cx('info_product')}>
-                <a href='/product'>TOCHIBA</a>
-                <h3>Light blue denim jacket</h3>
-                <div>36.000.000 VND</div>
+                <a href="/product">{name}</a>
+                <h3>{des}</h3>
+                <div>{price} VND</div>
                 <Button>Add to cart</Button>
             </div>
-            <div className={cx('hidden_info_product')}>
-                
-            </div>
+            <div className={cx('hidden_info_product')}></div>
         </div>
     );
 }

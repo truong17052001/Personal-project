@@ -35,6 +35,9 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
 const Test = function ({ children, name }) {
     return <div className={cx('tooltip')}>{name}</div>;
 };
+const Icon = function ({ children, href }) {
+    return <a href={href}>{children}</a>;
+};
 const fs = { fontSize: '30px', cursor: 'pointer', color: '#22292f', '&:focus': { outline: 'none' } };
 const ii = { fontSize: '20px', mr: '15px', cursor: 'pointer' };
 
@@ -119,7 +122,7 @@ function Header() {
                     </Modal>
                     <BootstrapTooltip title=<Test name="Cart" />>
                         <Badge color="warning" badgeContent={1} max={10}>
-                            <ShoppingCartOutlinedIcon sx={fs} />
+                            <a href="/cart"><ShoppingCartOutlinedIcon sx={fs} /></a>
                         </Badge>
                     </BootstrapTooltip>
 
